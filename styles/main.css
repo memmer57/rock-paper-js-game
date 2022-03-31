@@ -1,0 +1,117 @@
+body {
+    font-family: Quicksand, sans-serif;
+    font-size: 12px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+h1, h2, h3, #result {
+    padding: 1rem;
+    text-align: center;
+}
+#title {
+    grid-area: title;
+}
+.choices {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "title title title" "rock paper scissors";
+}
+.choices h2 {
+    grid-area: title;
+}
+.choices .icon-paper {
+    grid-area: paper;
+}
+.choices .icon-rock {
+    grid-area: rock;
+}
+.choices .icon-scissors {
+    grid-area: scissors;
+}
+.stats dl {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.stats dl * {
+    padding: 1rem;
+}
+.stats dd {
+    font-weight: bold;
+}
+.wins {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "wins-title wins-title wins-title"
+        "computer-title versus player-title" 
+        "computer-rounds rounds player-rounds"
+        "computer-games games player-games";
+    padding-bottom: 1rem;
+}
+.wins h2 {
+    grid-area: wins-title;
+}
+.wins h3.computer {
+    grid-area: computer-title;
+}
+.wins h3.versus {
+    grid-area: versus;
+}
+.wins h3.player {
+    grid-area: player-title;
+}
+#computer-rounds {
+    grid-area: computer-rounds;
+}
+#player-rounds {
+    grid-area: player-rounds;
+}
+.rounds {
+    grid-area: rounds;
+}
+#computer-games {
+    grid-area: computer-games;
+}
+#player-games {
+    grid-area: player-games;
+}
+.games {
+    grid-area: games;
+}
+.icon {
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center center;
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 1em;
+}
+.icon-paper {
+    background-image: url("../images/paper.png");
+}
+.icon-rock {
+    background-image: url("../images/rock.png");
+}
+.icon-scissors {
+    background-image: url("../images/scissors.png");
+}
+.icon-selected {
+    background-color:lightgreen;
+}
+.text, .number {
+    padding: .5rem;
+    text-align: center;
+}

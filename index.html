@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, paper, scissors</title>
+    <script src="./scripts/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body id="app">
+    <h1 id="title">Kámen, nůžky, papír</h1>
+    <section id="computer" class="choices">
+        <h2>Počítač</h2>
+        <div id="computer-rock" class="icon icon-rock icon-selected"></div>
+        <div id="computer-paper" class="icon icon-paper"></div>
+        <div id="computer-scissors" class="icon icon-scissors"></div>
+    </section>
+    <section id="player" class="choices">
+        <h2>Hráč</h2>
+        <div id="player-rock" class="icon icon-rock"></div>
+        <div id="player-paper" class="icon icon-paper"></div>
+        <div id="player-scissors" class="icon icon-scissors icon-selected"></div>
+    </section>
+    <div id="result" class="text">Vyberte si symbol</div>
+    <div id="message" class="text"></div>
+    <section class="stats">
+        <h2>Počty</h2>
+        <dl>
+            <dt>Počet kol</dt>
+            <dd id="rounds">0</dd>
+            <dt>Počet her</dt>
+            <dd id="games">0</dd>
+        </dl>
+    </section>
+    <section class="wins">
+        <h2>Výhry</h2>
+        <h3 class="computer">Počítač</h3>
+        <h3 class="versus">vs</h3>
+        <h3 class="player">Hráč</h3>
+        <div id="computer-rounds" class="number">0</div>
+        <div id="player-rounds" class="number">0</div>
+        <div class="text rounds">Kola</div>
+        <div id="computer-games" class="number">0</div>
+        <div id="player-games" class="number">0</div>
+        <div class="text games">Hry</div>
+    </section>
+</body>
+</html>
